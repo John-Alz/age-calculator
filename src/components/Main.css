@@ -1,0 +1,259 @@
+.form-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 35%;
+    margin:  0 auto;
+}
+
+.section-green {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 35px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5%;
+    border-color: #DFDFDF;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+.section-red {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 35px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5%;
+    border-color: red;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-daySection input::placeholder {
+    color: #898989;
+}
+
+.form-daySection input:focus {
+    outline: none;
+    border: 1px solid #7209b7;
+}
+
+.section-green-p {
+    width: 30%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #757575;
+    line-height: 5px;
+}
+.section-red-p {
+    width: 30%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #f34545;
+    line-height: 5px;
+}
+
+/* .form-daySection p {
+    width: 30%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #757575;
+    line-height: 5px;
+} */
+
+.btn-contianerTwo {
+    width: 75%;
+    display: flex;
+    justify-content: end;
+}
+
+.line {
+    border-top: 2px solid #EEEEEE;
+    width: 50%;
+    padding: 0;
+    margin: 40px 0 auto;
+}
+.btn-contianerTwo button{
+    background: #864DF9;
+    padding: 15px;
+    border-radius: 999px;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+
+.btn-contianerTwo button:hover{
+    background: #000;
+}
+/* 
+.btn-contianerTwo img{
+    background: #864DF9;
+    padding: 15px;
+    border-radius: 999px;
+    float: right;
+    cursor: pointer;
+}
+
+.btn-contianerTwo img:hover{
+    background: #000;
+} */
+
+
+.response-container {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.response-container h1, h2{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 90px;
+    margin: 0;
+}
+.response-container  h1{
+    color: #864DF9;
+}
+
+
+
+.response {
+    display: flex;
+    flex-direction: row; 
+    gap: 15px;
+    height: 110px;
+}
+
+.error {
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+@media (max-width: 1388px) { 
+    .response-container {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .response {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 978px){
+    /*Tablets [601px -> 1200px]*/
+    .form-container {
+        width: 60%;
+    }
+
+    .btn-contianerTwo {
+        width: 100%;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .line {
+        width: 70%;
+    }
+
+    .btn-contianerTwo button{
+        /* transform: translateX(-175px); */
+        position: absolute;
+    }
+
+    .response {
+        /* margin-left: 20px; */
+        justify-content: center;
+    }
+
+    .response-container {
+        width: 70%;
+        margin-top: 60px;
+    }
+
+    .response-container h1, h2{
+        font-family: 'Poppins', sans-serif;
+        font-size: 75px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 580px) {
+    .form-container {
+        width: 90%;
+        gap: 30px;
+        margin-left: 12px;
+    }
+
+    .form-daySection input::placeholder {
+        font-size: 30px;
+    }
+
+    .btn-contianerTwo {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    
+    .line {
+        width: 98%;
+    }
+
+    .btn-contianerTwo button{
+        position: absolute;
+    }
+
+    .response-container {
+        width: 100%;
+    }
+
+    .response {
+        height: 80px;
+    }
+
+    .response-container h1, h2{
+        font-size: 67px;
+    }
+  }
+
+  @media (max-width: 394px) {
+
+    .response-container {
+        width: 100%;
+    }
+
+    .response {
+        margin-left: 15px;
+    }
+
+    .response-container h1, h2{
+        font-size: 60px;
+    }
+  }
+
+  @media (max-width: 367px) {
+
+    .response-container {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .form-daySection input::placeholder {
+        font-size: 25px;
+    }
+
+    .response {
+        margin-left: 10px;
+    }
+
+    .response-container h1, h2{
+        font-size: 52px;
+    }
+  }
